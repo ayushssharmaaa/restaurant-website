@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Restaurant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>My Restaurant</h1>
-</header>
+  <!-- Navbar -->
+  <header>
+    <h1>🍴 Foodies Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Menu</a>
-  <a href="#">Contact</a>
-</nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Delicious Food Delivered</h2>
+    <p>Fresh | Tasty | Affordable</p>
+    <button>Order Now</button>
+  </section>
 
-<section class="hero">
-  <h2>Welcome to Our Restaurant</h2>
-</section>
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
 
-<section class="contact">
- <form action="https://formsubmit.co/ayushssharmaa@gmail.com" method="POST">
-  <input type="text" placeholder="Your Name" name="name" required> <br><br>
-  <input type="email" name="email" placeholder="Your Email" required> <br><br>
-  <textarea name="message" placeholder="Your Message"></textarea> <br><br>
+    <div class="menu-container">
 
-  <button type="submit">Send</button>
-</form>
-</section>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?pizza">
+        <h3>Pizza</h3>
+        <p>Cheesy and hot</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?burger">
+        <h3>Burger</h3>
+        <p>Juicy and crispy</p>
+      </div>
+
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?pasta">
+        <h3>Pasta</h3>
+        <p>Italian delight</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form action="https://formsubmit.co/ayushssharmaa@gmail.com" method="POST">
+      <br>
+
+      <input type="text" name="name" placeholder="Your Name" required> <br>
+      
+      <input type="email" name="email" placeholder="Your Email" required> <br>
+      
+      <textarea name="message" placeholder="Your Message"></textarea><br>
+
+      <button type="submit">Send Message</button>
+
+      <!-- Hidden -->
+      <input type="hidden" name="_captcha" value="false">
+
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Foodies Hub</p>
+  </footer>
 
 </body>
 </html>
