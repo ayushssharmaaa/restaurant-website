@@ -30,7 +30,7 @@ nav a {
   text-align: center;
   padding: 50px;
   background: url('https://source.unsplash.com/1200x500/?food') no-repeat center/cover;
-  color: pink;
+  color: #ff4d4d;
 }
 
 .hero button {
